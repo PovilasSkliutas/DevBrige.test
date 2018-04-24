@@ -1,0 +1,71 @@
+/* Aside styles */
+aside {
+	width: 100%;
+	padding-top: 1rem;
+
+	hr {
+		height: 3px;
+		background-color: #000;
+		border: none;
+		margin-top: 10px;
+	}
+}
+.aside-content p {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/* Contact form styles */
+.contact-form {
+    border: 1px solid $dark-grey;
+	padding: 10px 20px;
+
+	div {
+        padding: 10px 0;
+    }
+
+	span {
+		color: red;
+		font-size: 0.75rem;
+	}
+}
+.emsg-1, .emsg-2, .emsg-3 {
+    color: red;
+	font-size: 0.75rem;
+}
+.hidden {
+     visibility: hidden;
+}
+label {
+	font-size: 14px;
+	font-weight: 500;
+}
+label::placeholder {
+	font-size: 14px;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $dark-grey;
+    margin-top: 5px;
+}
+textarea {
+	@extend input;
+	resize: none;
+	height: 130px
+}
+button {
+    width: 110px;
+    height: 36px;
+    border: medium none;
+    background-color: #D3135A;
+    padding: 10px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 14px;
+}
+#submit {
+	text-transform: uppercase;
+}

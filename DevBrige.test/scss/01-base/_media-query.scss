@@ -1,0 +1,102 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #navToggle {
+        display: none;
+    }
+    .main-menu {
+        flex-direction: row;
+    }
+        .main-navigation {
+            position: relative;
+            text-align: right;
+            display: block;
+        }
+            .main-navigation li {
+                display: inline-block;
+                padding-top: 20px;
+            }
+                .main-navigation a {
+                    display: block;
+                    padding-right: 0;
+                	font-size: 20px;
+                	color: #fff;
+                }
+                .main-navigation a:hover {
+                    color: #333;
+                }
+
+            .dropdown-content {
+            	background-color: #4d4d4d;
+                text-align: left;
+                width: 140px;
+                display: none;
+                position: absolute;
+            }
+            .dropdown-content li {
+                display: inherit;
+				text-align: left;
+				padding: 0 5px 0;
+				&:hover{background-color:$dark-grey;}
+            }
+            .dropdown-content a {
+                padding: 0;
+                font-size: 12px;
+                color: #fff;
+                &:hover{color: #fff;}
+            }
+            .nav li:hover .dropdown-content{
+                display: block;
+            }
+            // triangle top-arow
+            .nav > li:hover > a:after{
+            	content:"";
+            	border-left: 10px solid transparent;
+            	border-right: 10px solid transparent;
+            	border-bottom: 10px solid #4d4d4d;
+            	position:absolute;
+            	bottom: 0;
+            	left: 60%;
+            	z-index: 1;
+            }
+
+    /* Resizing section and aside */
+    .main-content {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+    section {
+    	width: 70%;
+    	background-color: #e6e6e6;
+    }
+    aside {
+    	margin-top: 36px;
+        padding-left: 1rem;
+        padding-top: 5px;
+    	width: 30%;
+        height: 100%;
+    }
+    /* Resizing footer */
+    .footer-article p {
+        width: 75%;
+    }
+    .footer-article a {
+        width: 25%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
